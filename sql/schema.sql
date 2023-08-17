@@ -1,0 +1,13 @@
+CREATE TABLE validators (
+	id serial PRIMARY KEY,
+	email VARCHAR ( 255 ) UNIQUE NOT NULL,
+	password VARCHAR ( 50 ) NOT NULL,
+	website VARCHAR ( 255 ) UNIQUE NOT NULL,
+	twitter VARCHAR ( 255 ) UNIQUE NOT NULL,
+	telegram VARCHAR ( 100 ) UNIQUE NOT NULL,
+	logo TEXT,
+	ip VARCHAR ( 50 ) NOT NULL,
+	status VARCHAR(50) NOT NULL,
+	wallet_address VARCHAR ( 255 ) UNIQUE NOT NULL,
+	created_date TIMESTAMP NOT NULL
+);
